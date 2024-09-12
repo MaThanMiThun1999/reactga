@@ -1,5 +1,6 @@
 import React from 'react';
 import MyButton from '../components/home/MyButton';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
   return (
@@ -12,11 +13,14 @@ const Contact = () => {
       <p>Hash: {location.hash}</p>
       <p>Location: {location.pathname + location.search}</p>
       <p>History: {JSON.stringify(location)}</p>
-      <MyButton
-        btnCategory='Contact Page Button'
-        btnAction='Clicked Contact Page Button'
-        btnLabel='Contact Page Button'
-      />
+      <Link to='/'>
+        <MyButton
+          btnCategory='Back Actions'
+          btnAction='Back Button Action'
+          btnLabel='Back Button Submission'
+          btnText='Back To Home'
+        />
+      </Link>
     </div>
   );
 };

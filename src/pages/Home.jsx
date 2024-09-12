@@ -1,5 +1,6 @@
 import React from 'react';
 import MyButton from '../components/home/MyButton';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -13,9 +14,10 @@ const Home = () => {
       <p>Location: {location.pathname + location.search}</p>
       <p>History: {JSON.stringify(location)}</p>
       <MyButton
-        btnCategory='Home Page Button'
-        btnAction='Clicked Home Page Button'
-        btnLabel='Home Page Button'
+        btnCategory='User Actions'
+        btnAction='Submit Form'
+        btnLabel='Form Submission'
+        btnText='Submit'
       />
     </div>
   );
