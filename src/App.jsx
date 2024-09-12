@@ -18,10 +18,9 @@ const App = () => {
   return (
     <main>
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route index path='/' element={<Home />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
-      <MyButton />
     </main>
   );
 };

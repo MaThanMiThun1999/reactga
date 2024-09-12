@@ -13,6 +13,15 @@ const Home = () => {
       <p>Hash: {location.hash}</p>
       <p>Location: {location.pathname + location.search}</p>
       <p>History: {JSON.stringify(location)}</p>
+
+      <Link to='/contact' className='text-white'>
+        <MyButton
+          btnCategory='User Actions'
+          btnAction='Contact Button Action'
+          btnLabel='Contact Page'
+          btnText='Go to Contact Page'
+        ></MyButton>
+      </Link>
       <MyButton
         btnCategory='User Actions'
         btnAction='Submit Form'
